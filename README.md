@@ -1,1 +1,1 @@
-# airflow-snowflake-pipeline
+# Airflow ETL Pipeline for AWS and Snowflake
