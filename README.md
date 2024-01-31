@@ -1,6 +1,6 @@
 # Airflow ETL Pipeline for AWS and Snowflake
 
-  
+   
 ```bash   
 Airflow-ETL-Pipeline-for-Snowflake/
 ├── data_generation/
