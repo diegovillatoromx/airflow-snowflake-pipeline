@@ -1,0 +1,37 @@
+{
+    "num_records": 100,
+    "num_users": 1000,
+    "cities": ["Mexico City", "Guadalajara", "Monterrey", "Puebla", "Tijuana"],
+    "payment_online": ["Credit_card", "Spei", "PayPal", "OXXO Pay"],
+    "os": ["Android_13", "iOS_16", "Windows_11", "macOS_Monterey", "Linux_Ubuntu_22.04"],
+    "final_user_event": ["PURCHASE", "EXIT_APP", "PURCHASE", "EXIT_APP", "PURCHASE"],
+    "phone_models": [
+        "Samsung Galaxy S21", "Samsung Galaxy S22", "iPhone 13 Pro", "iPhone 14 Pro Max",
+        "Google Pixel 6", "Google Pixel 7",
+        "OnePlus 9 Pro", "OnePlus 10 Pro",
+        "Xiaomi Mi 11", "Xiaomi Mi 12",
+        "Huawei P40", "Huawei P50",
+        "Sony Xperia 5 III", "Sony Xperia 6",
+        "LG Velvet", "LG Velvet 2",
+        "Motorola Moto G Power", "Motorola Moto G Power 2",
+        "Oppo Find X3 Pro", "Oppo Find X4 Pro"
+    ],
+    "purchase_statuses": [
+        "COMPLETED", "FAILED_CHECKOUT", "FAILED_API_RESPONSE",
+        "INSUFFICIENT_FUNDS", "USER_ERROR", "FRAUD", "PENDING", "CANCELLED"
+    ],
+    "initial_event": "LAUNCH_APP",
+    "second_event": ["HOME", "EXIT_APP", "HOME"],
+    "third_event": ["GO_TO_CATEGORY", "EXIT_APP", "GO_TO_CATEGORY", "GO_TO_CATEGORY"],
+    "event_category": ["ELECTRONICS", "CLOTHING", "FOOD", "HOME_APPLIANCES", "BOOKS", "SPORTS"],
+    "city_coords": {
+        "Mexico City": [19.4326, -99.1332],
+        "Guadalajara": [20.6597, -103.3496],
+        "Monterrey": [25.6866, -100.3161],
+        "Puebla": [19.0414, -98.2063],
+        "Tijuana": [32.5149, -117.0382]
+    },
+    "stream_name": "{YOUR_DATA_STREAM_NAME}",
+    "region": "us-east-1"
+}
+
