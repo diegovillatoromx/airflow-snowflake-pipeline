@@ -1,6 +1,6 @@
 {
     "num_records": 100,
-    "num_users": 1000,
+    "num_users": 1000, 
     "cities": ["Mexico City", "Guadalajara", "Monterrey", "Puebla", "Tijuana"],
     "payment_online": ["Credit_card", "Spei", "PayPal", "OXXO Pay"],
     "os": ["Android_13", "iOS_16", "Windows_11", "macOS_Monterey", "Linux_Ubuntu_22.04"],
