@@ -1,7 +1,7 @@
 # Airflow ETL Pipeline for AWS and Snowflake
 
 ```bash   
-Airflow-ETL-Pipeline-for-Snowflake/
+Airflow-ETL-Pipeline-for-Snowflake/ 
 ├── data_generation/
 │   ├── generate_purchase_data.py     # Python script to simulate sales data generation
 │   ├── requirements.txt              # Python dependencies required for the data generation script
