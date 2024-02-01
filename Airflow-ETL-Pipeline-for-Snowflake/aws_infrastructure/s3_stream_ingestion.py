@@ -19,9 +19,6 @@ s3_client = boto3.client(
     aws_secret_access_key=aws_secret_access_key
 )
 
-# Define the bucket name and versioning configuration
-bucket_name = 'data_stream_ingestion_useast1'
-
 # Create the S3 bucket with versioning enabled
 s3_client.create_bucket(
     Bucket=bucket_name,
