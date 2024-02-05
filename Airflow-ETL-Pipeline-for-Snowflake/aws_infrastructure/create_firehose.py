@@ -17,9 +17,6 @@ firehose_name = config['firehose_name']
 # Define the delivery stream configuration
 firehose_config = config['firehose_config']
 
-# Define the schema for source records
-schema_config = config['schema_config']
-
 # Define the S3 destination configuration
 s3_destination_config = config['s3_destination_config']
 
@@ -38,24 +35,7 @@ response = firehose_client.create_delivery_stream(
             'SizeInMBs': 5,
             'IntervalInSeconds': buffer_interval
         },
-        'CompressionFormat': 'UNCOMPRESSED',
-        'EncryptionConfiguration': {
-            'NoEncryptionConfig': 'NoEncryption'
-        }
-    },
-    ExtendedS3DestinationConfiguration={
-        'RoleARN': 'arn:aws:iam::YOUR_ACCOUNT_ID:role/firehose_delivery_role',
-        'BucketARN': s3_destination_config['BucketARN'],
-        'Prefix': s3_destination_config['Prefix'],
-        'ErrorOutputPrefix': s3_destination_config['ErrorOutputPrefix'],
-        'BufferingHints': {
-            'SizeInMBs': 5,
-            'IntervalInSeconds': buffer_interval
-        },
-        'CompressionFormat': 'UNCOMPRESSED',
-        'EncryptionConfiguration': {
-            'NoEncryptionConfig': 'NoEncryption'
-        },
+        'CompressionFormat': 'SNAPPY',  # Change the compression format to SNAPPY for Parquet
         'DataFormatConversionConfiguration': {
             'Enabled': True,
             'InputFormatConfiguration': {
@@ -67,19 +47,12 @@ response = firehose_client.create_delivery_stream(
             },
             'OutputFormatConfiguration': {
                 'Serializer': {
-                    'ParquetSerDe': {
-                        'Compression': 'SNAPPY'
-                    }
+                    'ParquetSerDe': {}  # Leave the parameters empty to use the default configuration
                 }
-            },
-            'SchemaConfiguration': {
-                'CatalogId': 'AWS::Athena::Catalog',
-                'DatabaseName': schema_config['DatabaseName'],
-                'TableName': schema_config['TableName'],
-                'Region': schema_config['Region']
             }
         }
     }
 )
 
 print("Kinesis Data Firehose delivery stream created successfully.")
+
