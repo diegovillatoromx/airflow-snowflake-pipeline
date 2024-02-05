@@ -12,20 +12,6 @@ Airflow-ETL-Pipeline-for-Snowflake/
 │   │   ├── s3_stream_ingestion.py       # Boto3 script to create Bucket s3 ingestion
 │   └── cli_scripts/
 │       └── setup_infrastructure.sh    # AWS CLI scripts to set up resources that cannot be done with Boto3
-├── data_processing/
-│   ├── glue_jobs/
-│   │   └── data_transformation.py    # AWS Glue script for data transformation
-│   └── athena_queries/
-│       └── query_definitions.sql     # SQL query definitions for Athena
-├── monitoring/
-│   ├── cloudwatch/
-│   │   └── monitoring_config.json    # Configuration for CloudWatch monitoring
-│   └── grafana/
-│       └── dashboards/
-│           └── sales_dashboard.json  # Grafana dashboard definition for data visualization
-├── aws_services/
-│   ├── sns/
-│   │   └── send_sns_message.py       # Python script to send SNS messages from Lambda
 ├── config/
 │   ├── credentials.json              # AWS credentials and regional configuration
 │   ├── kinesis_ingestion_config.json # Configuration for Kinesis Data Stream ingestion
