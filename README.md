@@ -89,4 +89,26 @@ Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
     EVENT_TIMESTAMP TIMESTAMP_NTZ);
    ```
 
+3. Execute the SQL command to create an `'orders'` table with the specified columns and primary key.
+
+   ```sql
+   CREATE OR REPLACE TABLE your_schema_name.orders (
+    ORDER_ID STRING PRIMARY KEY,
+    USER_ID STRING,
+    ORDER_TYPE STRING,
+    STATUS STRING,
+    PAYMENT_METHOD STRING,
+    CREATED_AT TIMESTAMP_NTZ);
+    ```
+4.  Execute the SQL command to create a `'purchase_counts'` table with the specified columns and a foreign key reference to the `'users'` table.
+   ```sql
+   CREATE OR REPLACE TABLE your_schema_name.purchase_counts (
+    USER_ID STRING,
+    HOUR INTEGER,
+    DAILY INTEGER,
+    HOURLY_PURCHASE_COUNT INTEGER,
+    DAILY_PURCHASE_COUNT INTEGER,
+    FOREIGN KEY (USER_ID) REFERENCES your_schema_name.users(USER_ID));
+    ```
+
    
