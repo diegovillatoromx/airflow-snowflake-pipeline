@@ -67,3 +67,16 @@ CREATE ROLE your_role_name;
    ```sql
    CREATE OR REPLACE ROLE your_role_name;
    ```
+
+## Step 2: Define Snowflake Tables
+Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
+
+1. To Create a `'users'` Table, execute the SQL command to create a 'users' table with the specified columns and primary key.
+   ```sql
+   CREATE OR REPLACE TABLE your_schema_name.users (
+    USER_ID STRING PRIMARY KEY,
+    OS_USER STRING,
+    CITY STRING,
+    LATITUDE FLOAT,
+    LONGITUDE FLOAT);
+   ``` 
