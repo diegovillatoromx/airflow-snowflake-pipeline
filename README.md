@@ -55,4 +55,15 @@ CREATE ROLE your_role_name;
    AUTO_SUSPEND = 1800
    AUTO_RESUME = TRUE;
    ```
-   
+2. To create a Snowflake Database, execute the SQL command to create a Snowflake Database.
+   ```sql
+   CREATE OR REPLACE DATABASE your_database_name;
+   ```
+4. To Create a Snowflake Schema, execute the SQL command to create a Snowflake Schema within the database.
+   ```sql
+   CREATE OR REPLACE SCHEMA your_schema_name;
+   ```
+6. To create a Snowflake Role, execute the SQL command to create a Snowflake Role.
+   ```sql
+   CREATE OR REPLACE ROLE your_role_name;
+   ```
