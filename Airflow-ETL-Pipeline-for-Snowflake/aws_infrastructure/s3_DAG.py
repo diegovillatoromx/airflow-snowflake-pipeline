@@ -18,10 +18,3 @@ try:
 except Exception as e:
     print(f'An error occurred while creating the S3 bucket: {e}')
 
-# Optionally, set bucket policies or permissions as needed
-# ...
-
-# Upload your Apache Airflow DAG files to the S3 bucket
-# ...
-
-# Your DAG files are now stored in the S3 bucket and can be accessed by Apache Airflow
