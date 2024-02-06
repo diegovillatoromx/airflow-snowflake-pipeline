@@ -25,7 +25,7 @@ Airflow-ETL-Pipeline-for-Snowflake/
 ├── .gitignore                        # File to exclude files and folders from Git
 └── README.md                         # Project documentation, setup, and deployment information
 ```
-
+ 
 
 ```terminal
 -- 1. Create a Warehouse with the smallest size
