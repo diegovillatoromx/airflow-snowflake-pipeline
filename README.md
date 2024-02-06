@@ -27,25 +27,6 @@ Airflow-ETL-Pipeline-for-Snowflake/
 ```
  
 
-```terminal
--- 1. Create a Warehouse with the smallest size
-CREATE WAREHOUSE your_warehouse_name
-    WAREHOUSE_SIZE = 'X-SMALL'
-    WAREHOUSE_TYPE = 'STANDARD'
-    AUTO_SUSPEND = 300
-    AUTO_RESUME = TRUE;
-
--- 2. Create a Database
-CREATE DATABASE your_database_name;
-
--- 3. Create a Schema
-CREATE SCHEMA your_schema_name;
-
--- 4. Create a Role
-CREATE ROLE your_role_name;
-```
-
-
 ## Step 1: Create Snowflake Warehouse, Database, Schema, and Role
 
 1. To Create a Snowflake Warehouse, the execute the SQL command to create a Snowflake Warehouse with the desired configuration.
