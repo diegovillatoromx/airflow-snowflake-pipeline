@@ -43,5 +43,17 @@ CREATE SCHEMA your_schema_name;
 
 -- 4. Create a Role
 CREATE ROLE your_role_name;
-
 ```
+
+
+## Step 1: Create Snowflake Warehouse, Database, Schema, and Role
+
+1. Create a Snowflake Warehouse
+   - Execute the SQL command to create a Snowflake Warehouse with the desired configuration.
+   ```sql
+   CREATE OR REPLACE WAREHOUSE your_warehouse_name
+   WAREHOUSE_SIZE = 'X-SMALL'
+   AUTO_SUSPEND = 1800
+   AUTO_RESUME = TRUE;
+   ```
+   
