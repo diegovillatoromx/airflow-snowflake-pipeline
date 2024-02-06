@@ -109,6 +109,4 @@ Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
     HOURLY_PURCHASE_COUNT INTEGER,
     DAILY_PURCHASE_COUNT INTEGER,
     FOREIGN KEY (USER_ID) REFERENCES your_schema_name.users(USER_ID));
-    ```
-
-   
+   ```
