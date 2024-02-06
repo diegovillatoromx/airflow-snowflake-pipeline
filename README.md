@@ -101,7 +101,7 @@ Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
     CREATED_AT TIMESTAMP_NTZ);
     ```
 4.  Execute the SQL command to create a `'purchase_counts'` table with the specified columns and a foreign key reference to the `'users'` table.
-   ```sql
+    ```sql
    CREATE OR REPLACE TABLE your_schema_name.purchase_counts (
     USER_ID STRING,
     HOUR INTEGER,
