@@ -1,7 +1,16 @@
 import boto3
+import json
+
+# AWS credentials
+aws_access_key_id = 'YOUR_AWS_ACCESS_KEY'
+aws_secret_access_key = 'YOUR_AWS_SECRET_KEY'
 
 # Create a new AWS IAM client
-iam_client = boto3.client('iam')
+iam_client = boto3.client(
+    'iam',
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key
+)
 
 # Define the IAM role name
 role_name = 'SnowflakeAccessRole'
@@ -13,7 +22,7 @@ trust_policy = {
         {
             "Effect": "Allow",
             "Principal": {
-                "Service": "redshift.amazonaws.com"
+                "Service": "snowflake.amazonaws.com"
             },
             "Action": "sts:AssumeRole"
         }
@@ -37,3 +46,4 @@ try:
 
 except Exception as e:
     print(f"Error creating IAM role: {str(e)}")
+
