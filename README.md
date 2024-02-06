@@ -71,7 +71,7 @@ CREATE ROLE your_role_name;
 ## Step 2: Define Snowflake Tables
 Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
 
-1. To Create a `'users'` Table, execute the SQL command to create a 'users' table with the specified columns and primary key.
+1. To Create a `'users'` Table, execute the SQL command to create a '`users'` table with the specified columns and primary key.
    ```sql
    CREATE OR REPLACE TABLE your_schema_name.users (
     USER_ID STRING PRIMARY KEY,
@@ -79,4 +79,14 @@ Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
     CITY STRING,
     LATITUDE FLOAT,
     LONGITUDE FLOAT);
-   ``` 
+   ```
+2. To Create an `'events'` Table, execute the SQL command to create an `'events'` table with the specified columns and primary key.
+   ```sql
+   CREATE OR REPLACE TABLE your_schema_name.events (
+    EVENT_ID STRING PRIMARY KEY,
+    USER_ID STRING,
+    EVENT_NAME STRING,
+    EVENT_TIMESTAMP TIMESTAMP_NTZ);
+   ```
+
+   
