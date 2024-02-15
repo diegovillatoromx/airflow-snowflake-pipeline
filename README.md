@@ -1,6 +1,6 @@
 # Airflow ETL Pipeline for AWS and Snowflake 
 
-<img src='https://github.com/diegovillatoromx/Incremental_ETL_Pipeline/blob/main/images/etl-alpha.gif' alt="incremental_etl_alpha_api">
+<img src='https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif' alt="architecture-airflow">
 
 
 ```bash    
