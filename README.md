@@ -1,29 +1,8 @@
 # Airflow ETL Pipeline for AWS and Snowflake 
 
-<img src='https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif' alt="architecture-airflow">
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centrar imagen en repositorio GitHub</title>
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif" alt="architecture-airflow">
-    </div>
-</body>
-</html>
-
-```
+<p align="center">
+  <img src="https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif" alt="architecture-airflow">
+</p>
 
 ```bash    
 Airflow-ETL-Pipeline-for-Snowflake/ 
