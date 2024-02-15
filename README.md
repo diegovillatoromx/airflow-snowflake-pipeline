@@ -91,3 +91,6 @@ Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
     DAILY_PURCHASE_COUNT INTEGER,
     FOREIGN KEY (USER_ID) REFERENCES your_schema_name.users(USER_ID));
    ```
+
+
+![schema-snowflake](https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/schema-snowflake.png)
