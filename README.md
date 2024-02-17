@@ -1,5 +1,14 @@
 # Airflow ETL Pipeline for AWS and Snowflake 
 
+## Table of Contents
+
+1. [Data Generation](#data-generation)
+2. [AWS Infrastructure](#aws-infrastructure)
+3. [Configuration](#configuration)
+4. [.gitignore](#gitignore)
+5. [README.md](#readmemd)
+
+
 <p align="center">
   <img src="https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif" alt="architecture-airflow" width="800">
 </p>
