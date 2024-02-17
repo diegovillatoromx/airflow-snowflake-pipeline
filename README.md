@@ -84,6 +84,9 @@ Through the meticulous generation process, the dataset captures the nuances and 
 The dataset's structured format and extensive documentation facilitate easy integration into data pipelines and analytics workflows, empowering organizations to derive actionable insights and drive informed decision-making processes. Whether it's analyzing user churn rates, optimizing marketing campaigns, or understanding feature adoption trends, the Mobile App Events Generation Dataset for Simulation offers a wealth of opportunities for data-driven innovation and experimentation.
 
 
+### Methodology and Modular Code Overview
+
+This section provides an overview of the methodology employed in the development of the ETL (Extract, Transform, Load) pipeline using Apache Airflow for Snowflake data warehouse integration. Additionally, it outlines the modular structure of the codebase, highlighting key components and their functionalities.
 
 ```bash    
 Airflow-ETL-Pipeline-for-Snowflake/ 
@@ -110,6 +113,30 @@ Airflow-ETL-Pipeline-for-Snowflake/
 ├── .gitignore                        # File to exclude files and folders from Git
 └── README.md                         # Project documentation, setup, and deployment information
 ```
+#### Methodology
+The ETL pipeline follows a structured approach, encompassing the following stages:
+
+1. **Data Extraction**: Simulated data generation scripts (`generate_purchase_data.py`) are utilized to simulate sales data generation, providing a realistic dataset for pipeline testing and development.
+
+2. **Data Transformation**: The extracted data undergoes transformation processes to ensure compatibility and optimization for Snowflake data warehouse ingestion. Python scripts such as `purchase_data_generation.py` are employed to perform necessary data transformations and enhancements.
+
+3. **Data Loading**: Transformed data is loaded into Snowflake data warehouse using optimized ingestion methods, leveraging AWS infrastructure and services like Kinesis Data Streams and S3 buckets.
+
+#### Modular Code Overview
+
+The codebase is organized into several modules within the project structure:
+
+- **`data_generation/`**: Contains Python scripts for generating simulated purchase data, along with associated dependencies specified in `requirements.txt`.
+
+- **`aws_infrastructure/`**: Houses Boto3 and AWS CLI scripts responsible for setting up and configuring AWS infrastructure components required for data ingestion and processing, such as Kinesis Data Streams and S3 buckets.
+
+- **`config/`**: Stores configuration files (`*.json`) containing AWS credentials, regional settings, and specific configurations for various AWS services utilized in the pipeline, including Kinesis Data Streams, S3 buckets, Lambda functions, Athena, and SNS.
+
+- **`.gitignore`**: Specifies files and folders to be excluded from version control using Git, ensuring clean repository management.
+
+- **`README.md`**: Provides comprehensive documentation, setup instructions, and deployment information for the project, facilitating easy onboarding and collaboration for team members and stakeholders.
+
+This modular structure enhances code maintainability, scalability, and reusability, allowing for seamless integration of new features, optimizations, and enhancements into the ETL pipeline.
  
 
 ## Step 1: Create Snowflake Warehouse, Database, Schema, and Role
