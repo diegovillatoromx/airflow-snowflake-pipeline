@@ -24,8 +24,8 @@ The high-level design components of our system are as follows:
 We require a robust solution for streaming and ingesting real-time data from mobile app events into our data pipeline. This component must handle large volumes of data efficiently and ensure minimal latency for processing.
 
 #### Technologies Considered:
-- **Amazon Kinesis Data Streams:** Offers scalable and real-time data streaming capabilities, ideal for ingesting data from mobile app events.
-- **Amazon Kinesis Data Firehose:** Provides a managed service for loading streaming data into Snowflake, simplifying the data delivery process.
+- **Amazon Kinesis Data Streams*:** Offers scalable and real-time data streaming capabilities, ideal for ingesting data from mobile app events.
+- **Amazon Kinesis Data Firehose*:** Provides a managed service for loading streaming data into Snowflake, simplifying the data delivery process.
 
 ### Data Processing
 Our system needs compute capabilities to process the ingested data efficiently. Whether it's real-time or batch processing, reliability and fast performance are essential for timely data transformation.
@@ -38,14 +38,14 @@ Our system needs compute capabilities to process the ingested data efficiently. 
 A scalable and performant data storage solution is crucial for storing and managing processed data. This component must support Snowflake integration and ensure data integrity.
 
 #### Technologies Considered:
-- **Amazon S3:** Simple Storage Service offers highly scalable object storage, suitable for storing processed data and integrating with Snowflake.
+- **Amazon S3*:** Simple Storage Service offers highly scalable object storage, suitable for storing processed data and integrating with Snowflake.
 - **Snowflake:** A cloud-based data warehouse designed for scalability and performance, providing seamless integration with various data sources and analytics tools.
 
 ### Data Transformation and Loading
 Efficient data transformation and loading processes are essential for preparing data for analysis in Snowflake. This component must handle complex transformations and ensure data quality.
 
 #### Technologies Considered:
-- **Apache Airflow:** Provides a platform for orchestrating complex data workflows, including data transformation and loading tasks.
+- **Apache Airflow*:** Provides a platform for orchestrating complex data workflows, including data transformation and loading tasks.
 - **AWS Glue:** Offers managed ETL (Extract, Transform, Load) service for preparing and loading data into Snowflake, with support for schema discovery and data cataloging.
 
 ### Data Query and Analysis
@@ -53,7 +53,7 @@ To enable data-driven decision-making, we need tools for querying and analyzing 
 
 #### Technologies Considered:
 - **Amazon Athena:** Allows ad hoc querying of data in S3 using standard SQL, providing flexibility and cost-effectiveness for data analysis.
-- **Snowflake:** Offers a powerful SQL-based interface for querying and analyzing data, with support for complex analytics and reporting tasks.
+- **Snowflake*:** Offers a powerful SQL-based interface for querying and analyzing data, with support for complex analytics and reporting tasks.
 
 These design choices were made based on their suitability and alignment with the requirements of our real-time data processing and analysis pipeline. Services marked with an asterisk (*) were utilized in the creation of the project.
 
