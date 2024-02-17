@@ -73,6 +73,17 @@ In summary, the architecture of our Data Pipeline embodies the principles of sca
   <img src="https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif" alt="architecture-airflow" width="800">
 </p>
 
+### Dataset
+
+The dataset provided in the [Mobile App Events Generation Dataset for Simulation](https://github.com/diegovillatoromx/Mobile-App-Events-Generation-Dataset-for-Simulation) repository serves as a comprehensive collection of simulated mobile app events, meticulously crafted to mimic real-world user interactions within a mobile application environment.
+
+The dataset encompasses various types of events commonly encountered in mobile applications, including but not limited to user registrations, logins, purchases, interactions, and actions. Each event entry is enriched with contextual information such as timestamps, user IDs, device information, and event attributes, enabling detailed analysis and exploration of user behavior patterns.
+
+Through the meticulous generation process, the dataset captures the nuances and complexities of user interactions, providing valuable insights into user engagement, app usage patterns, and user journey analysis. This rich and diverse dataset serves as a valuable resource for data engineers, data scientists, and analysts seeking to develop and evaluate data-driven solutions, such as recommendation systems, personalized user experiences, and predictive analytics models.
+
+The dataset's structured format and extensive documentation facilitate easy integration into data pipelines and analytics workflows, empowering organizations to derive actionable insights and drive informed decision-making processes. Whether it's analyzing user churn rates, optimizing marketing campaigns, or understanding feature adoption trends, the Mobile App Events Generation Dataset for Simulation offers a wealth of opportunities for data-driven innovation and experimentation.
+
+
 
 ```bash    
 Airflow-ETL-Pipeline-for-Snowflake/ 
