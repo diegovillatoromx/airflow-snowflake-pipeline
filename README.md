@@ -137,7 +137,54 @@ The codebase is organized into several modules within the project structure:
 - **`README.md`**: Provides comprehensive documentation, setup instructions, and deployment information for the project, facilitating easy onboarding and collaboration for team members and stakeholders.
 
 This modular structure enhances code maintainability, scalability, and reusability, allowing for seamless integration of new features, optimizations, and enhancements into the ETL pipeline.
- 
+
+## Data Modeling
+
+Data modeling is a critical aspect of designing the schema for efficient storage and retrieval of data in Snowflake. We adopt a structured approach to model our data, capitalizing on Snowflake's relational database capabilities.
+
+### Table Structure
+
+We structure our data in Snowflake using the following attributes:
+
+| Attribute          | Description                                                                |
+|--------------------|----------------------------------------------------------------------------|
+| USER_ID            | Unique identifier of the user.                                             |
+| INITIAL_EVENT      | First event performed by the user.                                         |
+| EVENT_2            | Second event performed by the user.                                        |
+| EVENT_3            | Third event performed by the user.                                         |
+| EVENT_OUT          | Final event performed by the user.                                          |
+| OS_USER            | Operating system used by the user.                                         |
+| CITY               | City of the user.                                                          |
+| LATITUDE           | Latitude of the user's location.                                            |
+| LONGITUDE          | Longitude of the user's location.                                           |
+| ORDER_TYPE         | Type of order made by the user.                                             |
+| STATUS             | Status of the order made by the user.                                       |
+| PAYMENT_METHOD     | Payment method used by the user.                                            |
+| CREATED_AT         | Date and time of the record creation.                                       |
+| HOURLY_PURCHASE_COUNT | Number of purchases made by the user in the last hour.                    |
+| DAILY_PURCHASE_COUNT  | Number of purchases made by the user in the current day.                  |
+
+### Sample Item Attributes
+
+```json
+{
+    "USER_ID": "12345",
+    "INITIAL_EVENT": "login",
+    "EVENT_2": "search",
+    "EVENT_3": "view",
+    "EVENT_OUT": "logout",
+    "OS_USER": "iOS",
+    "CITY": "New York",
+    "LATITUDE": 40.7128,
+    "LONGITUDE": -74.0060,
+    "ORDER_TYPE": "online",
+    "STATUS": "completed",
+    "PAYMENT_METHOD": "credit_card",
+    "CREATED_AT": "2022-02-20T12:00:00",
+    "HOURLY_PURCHASE_COUNT": 3,
+    "DAILY_PURCHASE_COUNT": 10
+}
+```
 
 ### Step 1: Create Snowflake Warehouse, Database, Schema, and Role
 
