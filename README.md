@@ -2,12 +2,13 @@
 
 ## Table of Contents
 
-1. [Data Generation](#data-generation)
-2. [AWS Infrastructure](#aws-infrastructure)
-3. [Configuration](#configuration)
-4. [.gitignore](#gitignore)
-5. [README.md](#readmemd)
-
+1. [Description](#description)
+2. [Architecture](#architecture)
+3. [Dataset](#dataset)
+4. [Methodology and Modular Code Overview](#methodology-and-modular-code-overview)
+5. [Data Modeling](#data-modeling)
+6. [Contribution](#contribution)
+7. [Contact](#contact)
 
 <p align="center">
   <img src="https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif" alt="architecture-airflow" width="800">
