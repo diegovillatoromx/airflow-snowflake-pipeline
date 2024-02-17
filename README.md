@@ -142,6 +142,8 @@ This modular structure enhances code maintainability, scalability, and reusabili
 
 Data modeling is a critical aspect of designing the schema for efficient storage and retrieval of data in Snowflake. We adopt a structured approach to model our data, capitalizing on Snowflake's relational database capabilities.
 
+![schema-snowflake](https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/schema-snowflake.png)
+
 ### Table Structure
 
 We structure our data in Snowflake using the following attributes:
@@ -210,8 +212,6 @@ Snowflake will provide us with a powerful, scalable platform to build and execut
    CREATE OR REPLACE ROLE your_role_name;
    ```
 
-## Data Modeling
-
 ### Step 2: Define Snowflake Tables
 Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
 
@@ -256,4 +256,3 @@ Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
    ```
 
 
-![schema-snowflake](https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/schema-snowflake.png)
