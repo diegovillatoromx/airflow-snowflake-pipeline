@@ -139,7 +139,7 @@ The codebase is organized into several modules within the project structure:
 This modular structure enhances code maintainability, scalability, and reusability, allowing for seamless integration of new features, optimizations, and enhancements into the ETL pipeline.
  
 
-## Step 1: Create Snowflake Warehouse, Database, Schema, and Role
+### Step 1: Create Snowflake Warehouse, Database, Schema, and Role
 
 1. To Create a Snowflake Warehouse, the execute the SQL command to create a Snowflake Warehouse with the desired configuration.
    ```sql
@@ -161,7 +161,9 @@ This modular structure enhances code maintainability, scalability, and reusabili
    CREATE OR REPLACE ROLE your_role_name;
    ```
 
-## Step 2: Define Snowflake Tables
+## Data Modeling
+
+### Step 2: Define Snowflake Tables
 Now, we'll define the Snowflake tables needed for the 'purchase' data structure:
 
 1. To Create a `'users'` Table, execute the SQL command to create a '`users'` table with the specified columns and primary key.
