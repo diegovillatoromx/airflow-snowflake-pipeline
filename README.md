@@ -1,4 +1,4 @@
-# Airflow ETL Pipeline for AWS and Snowflake 
+# Real-time Mobile App Data Processing with Snowflake ELT Pipeline
 
 ## Table of Contents
 
