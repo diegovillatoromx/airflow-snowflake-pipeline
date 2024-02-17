@@ -57,6 +57,17 @@ To enable data-driven decision-making, we need tools for querying and analyzing 
 
 These design choices were made based on their suitability and alignment with the requirements of our real-time data processing and analysis pipeline. Services marked with an asterisk (*) were utilized in the creation of the project.
 
+### Architecture
+
+This project is dedicated to constructing a robust Data Pipeline leveraging cutting-edge cloud technologies including AWS (Amazon Web Services), Snowflake, Kinesis, and Apache Airflow. An efficient Data Pipeline serves as the backbone for ingesting, processing, and analyzing vast amounts of both real-time and batch data, enabling streamlined and insightful data-driven decision-making processes.
+
+The architecture of our Data Pipeline is designed to handle the diverse and dynamic nature of modern data streams, ensuring scalability, reliability, and flexibility throughout the entire data lifecycle. By harnessing the power of AWS services such as Kinesis for real-time data ingestion, Snowflake for cloud-native data warehousing, and Apache Airflow for workflow orchestration, we establish a robust foundation for seamless data processing and analysis.
+
+The integration of AWS services offers unparalleled scalability and resilience, allowing our Data Pipeline to adapt to changing data volumes and processing requirements effortlessly. Snowflake's innovative architecture enables efficient storage and querying of structured and semi-structured data, empowering data analysts and stakeholders with fast and reliable access to critical insights.
+
+Additionally, Apache Airflow serves as the central orchestrator for our Data Pipeline, providing a unified platform for defining, scheduling, and monitoring data workflows. With Airflow's intuitive interface and extensible architecture, data engineers can easily manage complex data pipelines, ensuring the timely and accurate delivery of data to downstream systems and applications.
+
+In summary, the architecture of our Data Pipeline embodies the principles of scalability, reliability, and efficiency, leveraging the synergies between AWS, Snowflake, Kinesis, and Apache Airflow to unlock the full potential of our data assets and drive meaningful business outcomes.
 
 <p align="center">
   <img src="https://github.com/diegovillatoromx/airflow-snowflake-pipeline/blob/main/architecture.gif" alt="architecture-airflow" width="800">
