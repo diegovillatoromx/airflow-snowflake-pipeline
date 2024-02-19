@@ -1,6 +1,6 @@
 import boto3
 
-# Create an instance of the Airflow client
+# Create an instance of the Airflow client 
 client = boto3.client('mwaa', region_name='us-east-1')  # Replace 'us-east-1' with your preferred region
 
 # Define Apache Airflow environment configuration
