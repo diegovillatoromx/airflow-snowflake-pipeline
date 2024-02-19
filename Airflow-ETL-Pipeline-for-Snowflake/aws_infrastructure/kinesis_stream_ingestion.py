@@ -5,7 +5,7 @@ import json
 config_file = 'config/kinesis_ingestion_config.json'
 
 with open(config_file, 'r') as f:
-    config = json.load(f)
+    config = json.load(f) 
 
 stream_name = config['stream_name']
 region_name = config['region_name']
