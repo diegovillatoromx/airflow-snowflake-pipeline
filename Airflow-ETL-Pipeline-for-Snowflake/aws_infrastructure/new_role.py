@@ -4,7 +4,7 @@ import json
 # AWS credentials
 aws_access_key_id = 'YOUR_AWS_ACCESS_KEY'
 aws_secret_access_key = 'YOUR_AWS_SECRET_KEY'
-
+ 
 # Create a new AWS IAM client
 iam_client = boto3.client(
     'iam',
