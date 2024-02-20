@@ -1,4 +1,4 @@
-# Real-time Mobile App Data Processing with Snowflake ELT Pipeline
+# Real-time Mobile App Data Processing with Snowflake ELT Pipeline 
 
 ## Table of Contents
 
