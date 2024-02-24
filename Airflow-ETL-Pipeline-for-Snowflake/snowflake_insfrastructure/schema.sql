@@ -2,7 +2,7 @@
 
 -- Create a schema
 CREATE OR REPLACE SCHEMA your_schema_name;
-
+ 
 -- Create a 'users' table
 CREATE OR REPLACE TABLE your_schema_name.users (
     USER_ID STRING PRIMARY KEY,
