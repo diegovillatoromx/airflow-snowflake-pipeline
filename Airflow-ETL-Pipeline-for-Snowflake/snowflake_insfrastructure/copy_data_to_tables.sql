@@ -1,6 +1,6 @@
 -- Copy data from Parquet files in S3 to 'users' table
 COPY INTO your_schema_name.users
-  FROM @your_snowflake_stage
+  FROM @your_snowflake_stage 
   FILE_FORMAT = (TYPE = 'PARQUET')
   PATTERN = 'users/*.parquet'
   ON_ERROR = 'CONTINUE';
