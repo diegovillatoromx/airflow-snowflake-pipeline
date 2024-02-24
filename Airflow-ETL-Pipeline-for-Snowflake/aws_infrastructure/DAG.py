@@ -5,7 +5,7 @@ from airflow.providers.snowflake.transfers.s3_to_snowflake import S3ToSnowflakeO
 default_args = {
     'owner': 'your_name', 
     'start_date': datetime(2022, 1, 1),
-    'retries': 1,
+    'retries': 1, 
     'retry_delay': timedelta(minutes=5),
 }
 
