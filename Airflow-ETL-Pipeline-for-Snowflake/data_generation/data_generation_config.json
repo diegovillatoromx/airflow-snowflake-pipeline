@@ -1,5 +1,5 @@
 {
-    "num_records": 100,
+    "num_records": 100, 
     "num_users": 1000, 
     "cities": ["Mexico City", "Guadalajara", "Monterrey", "Puebla", "Tijuana"],
     "payment_online": ["Credit_card", "Spei", "PayPal", "OXXO Pay"],
