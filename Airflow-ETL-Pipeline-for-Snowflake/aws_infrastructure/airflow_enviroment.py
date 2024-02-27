@@ -4,7 +4,7 @@ import boto3
 client = boto3.client('mwaa', region_name='us-east-1')  # Replace 'us-east-1' with your preferred region
 
 # Define Apache Airflow environment configuration 
-environment = {
+environment = { 
     'Name': 'my-airflow-environment',  # Change this to your desired name
     'ExecutionRoleArn': 'arn:aws:iam::123456789012:role/service-role/my-mwaa-role',  # Change this to your execution role ARN
     'DagS3Path': 's3://my-dag-bucket',  # Change this to the location of your S3 DAG bucket
