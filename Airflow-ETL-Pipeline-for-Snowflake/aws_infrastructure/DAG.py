@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from airflow import DAG 
 from airflow.providers.snowflake.transfers.s3_to_snowflake import S3ToSnowflakeOperator
-
+ 
 default_args = {
     'owner': 'your_name', 
     'start_date': datetime(2022, 1, 1),
